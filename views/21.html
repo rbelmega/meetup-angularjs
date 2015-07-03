@@ -1,0 +1,25 @@
+<section>
+	<div class=" sub-topic ">
+		<h1>Write less code</h1>
+	</div>
+	<div ng-show="!showSm" class="center letters text-left sub-list">
+		<h1>● Data models without getters/setters</h1>
+
+		<h1>● Data-binding</h1>
+
+		<h1>● Directives are separate from app code</h1>
+
+		<h1>● Filters allow you to manipulate data</h1>
+
+	</div>
+
+	<div class="smDemo">
+		<input type="text" ng-model="smText"/>
+		<span ng-bind="smText"></span><br />
+		<button ng-show="smText.length" ng-click="showSm = !showSm">show code</button>
+			<pre ng-show="showSm"><code class="javascript">
+	&lt;input type=&quot;text&quot; ng-model=&quot;smText&quot;/&gt;
+	&lt;span ng-bind=&quot;smText&quot;&gt;&lt;/span&gt;
+			</code></pre>
+	</div>
+</section>
