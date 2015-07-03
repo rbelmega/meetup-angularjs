@@ -1,0 +1,15 @@
+<section>
+	<div class=" sub-topic ">
+		<h1>DEMO: search</h1>
+<pre ng-if="!imgOn"><code class="html" >
+	&lt;div class=&quot;demo&quot; ng-controller=&quot;meetUpDemoCtrl&quot;&gt;
+	  &lt;input type=&quot;search&quot; ng-model=&quot;query.name&quot; placeholder=&quot;search&quot;/&gt;
+	  &lt;p ng-repeat=&quot;month in months | filter:query&quot;&gt;
+	    &lt;span ng-bind=&quot;month.name&quot;&gt;&lt;/span&gt; - &lt;span ng-bind=&quot;month.days&quot;&gt;&lt;/span&gt;
+	  &lt;/p&gt;
+	&lt;/div&gt;
+</code></pre>
+
+	</div>
+	<img ng-if="imgOn" src="img/demo_search.png"/>
+</section>

@@ -1,0 +1,23 @@
+<section>
+	<div class="sub-topic">
+		<h1>Dependency injection (DI)</h1>
+	</div>
+	<pre ng-if="!imgOn"><code class="javascript" >
+	presentation.service(&quot;monthService&quot;, function() {
+
+	  this.getMonth = function() {
+	    return [
+	     {
+	       name: &quot;January&quot;,
+	       order: 1,
+	       days: 31
+	     },
+	     {
+	       name: &quot;February&quot;,
+	       order: 2,
+	       days: 28
+	     },
+		</code></pre>
+
+	<img ng-if="imgOn" src="img/demoService.png"/>
+</section>
